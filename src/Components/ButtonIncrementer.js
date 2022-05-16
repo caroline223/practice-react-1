@@ -21,6 +21,10 @@ function ButtonIncrementer() {
         setCount(count * 2)
     }
 
+    const resetButton = () => {
+        setCount(0)
+    }
+
     
 
     return(
@@ -29,7 +33,8 @@ function ButtonIncrementer() {
             <button onClick={addOne}>Add One</button> &nbsp;
             {count} &nbsp;
             <button onClick={subtractOne}>Minus One</button>&nbsp;
-            <button onClick={multiplyTwo}>Times Two</button>
+            <button onClick={multiplyTwo}>Times Two</button>&nbsp;
+            <button onClick={resetButton}>Clear</button>
             <br /><br />
             <div>
                 <label>Enter A Number to See It Raised to The Power of Two <br/>
