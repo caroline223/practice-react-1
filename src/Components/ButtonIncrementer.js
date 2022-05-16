@@ -14,11 +14,16 @@ function ButtonIncrementer() {
         setCount(count - 1)
     }
 
+    const multiplyTwo = () => {
+        setCount(count * 2)
+    }
+
     return(
         <div>
             <button onClick={addOne}>Add One</button> &nbsp;
             {count} &nbsp;
-            <button onClick={subtractOne}>Minus One</button>
+            <button onClick={subtractOne}>Minus One</button>&nbsp;
+            <button onClick={multiplyTwo}>Times Two</button>
         </div>
     )
 
