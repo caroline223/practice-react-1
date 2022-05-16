@@ -5,6 +5,8 @@ function ButtonIncrementer() {
 
     const [count, setCount] = useState(0)
     const [count2, setCount2] = useState(0)
+    
+    
 
 
     const addOne = () => {
@@ -20,8 +22,10 @@ function ButtonIncrementer() {
     }
 
     
+
     return(
         <div>
+           <h2>Current Date: {Date().toLocaleString()}</h2>
             <button onClick={addOne}>Add One</button> &nbsp;
             {count} &nbsp;
             <button onClick={subtractOne}>Minus One</button>&nbsp;
